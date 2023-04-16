@@ -39,6 +39,8 @@ public class Car{
 	public double time_to_collision(Car car2){
 		if(detect_collision(car2)){
 			return (y-car2.y)/(speed*dir_vec[1]-car2.speed*car2.dir_vec[1]);
+		}else{
+			return -1;
 		}
 	}
 	public static void main(String[]args){
